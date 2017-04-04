@@ -1,0 +1,15 @@
+{
+  "name": "@andyet/tracer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Nathan LaFreniere <quitlahok@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/trace-agent": "^1.0.4",
+    "keyfob": "^1.0.0",
+    "shimmer": "^1.1.0"
+  }
+}
