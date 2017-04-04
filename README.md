@@ -5,9 +5,8 @@ This module is a shim around @google-cloud/trace-agent to allow us to use it eve
 ### usage
 
 ```js
-const Tracer = require('@andyet/tracer').start();
-// if you've already started the tracer in another module
-// use the .get() method instead
+const Tracer = require('@andyet/tracer');
+Tracer.start();
 
 Tracer.trace('spanName', (span) => {
 
