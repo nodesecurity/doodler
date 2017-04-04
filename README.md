@@ -1,14 +1,14 @@
-## tracer
+## Doodler
 
 This module is a shim around @google-cloud/trace-agent to allow us to use it even when we're not running in the google cloud environment and not have to worry about wrapping it in a bunch of if statements. It also provides a helper method to make tracing functions easier, and bundles custom plugins for the trace agent.
 
 ### usage
 
 ```js
-const Tracer = require('@andyet/tracer');
-Tracer.start();
+const Doodler = require('doodler');
+Doodler.start();
 
-Tracer.trace('spanName', (span) => {
+Doodler.trace('spanName', (span) => {
 
   span.addLabel('labelName', 'labelValue');
   return somethingAsync().then((res) => {
