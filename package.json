@@ -1,6 +1,6 @@
 {
   "name": "doodler",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a wrapper around @google-cloud/trace-agent for some common configurationy things",
   "main": "lib/index.js",
   "scripts": {},
