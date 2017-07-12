@@ -55,7 +55,7 @@ module.exports = [{
   versions: '5.x',
   patch: function (Pg, TraceApi) {
 
-    Shimmer.wrap(Pg.prototype, 'query', internals.createWrapper(TraceApi));
+    Shimmer.wrap(Pg.Client.prototype, 'query', internals.createWrapper(TraceApi));
   },
   unpatch: function (Pg) {
 
